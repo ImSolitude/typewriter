@@ -38,9 +38,7 @@ document.addEventListener("keypress", function (event) {
     } else {
         sound.currentTime = 0;
     }
-    console.log(event.keyCode);
     var letter = String.fromCharCode(event.keyCode);
-    console.log(letter);
     letterE.textContent = letter;
     messageE.click();
     updateLetter(event.keyCode, letter);
